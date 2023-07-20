@@ -27,6 +27,11 @@
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <dependencies>
+  	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.10</version>
+	</dependency>
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.saavtk</groupId>
 		<artifactId>saavtk</artifactId>
