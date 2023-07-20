@@ -11,6 +11,12 @@ import java.util.Set;
 
 import org.apache.commons.io.FilenameUtils;
 
+import com.mysql.jdbc.StringUtils;
+
+import crucible.crust.metadata.api.Key;
+import crucible.crust.metadata.api.Version;
+import crucible.crust.metadata.impl.InstanceGetter;
+import crucible.crust.metadata.impl.SettableMetadata;
 import edu.jhuapl.saavtk.util.ColorUtil;
 import edu.jhuapl.sbmt.core.util.TimeUtil;
 import edu.jhuapl.sbmt.pointing.IPointingProvider;
@@ -30,11 +36,6 @@ import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryKey;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryMetadata;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryTrajectoryMetadata;
 import edu.jhuapl.sbmt.stateHistory.model.trajectory.StandardTrajectory;
-
-import crucible.crust.metadata.api.Key;
-import crucible.crust.metadata.api.Version;
-import crucible.crust.metadata.impl.InstanceGetter;
-import crucible.crust.metadata.impl.SettableMetadata;
 
 /**
  * Standard class for holding history information.  A timeToStateMap keeps a correlation between ephemeris time
@@ -301,7 +302,7 @@ public class StandardStateHistory extends AbstractStateHistory
                 // add to history
                 segments.add(flybyState);
 
-                if(com.mysql.cj.util.StringUtils.isNullOrEmpty(timeArray.get(0)[0])){
+                if(StringUtils.isNullOrEmpty(timeArray.get(0)[0])){
                     timeArray.get(0)[0] = flybyState.getUtc();
                 }
                 timeArray.get(0)[1] = flybyState.getUtc();
