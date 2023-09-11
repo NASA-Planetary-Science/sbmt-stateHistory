@@ -40,7 +40,7 @@ public class LiveColorableManager
 
 	public static void main(String[] args)
 	{
-		NativeLibraryLoader.loadAllVtkLibraries();
+		NativeLibraryLoader.loadVtkLibraries();
 
 		vtkFloatArray values = new vtkFloatArray();
 		values.SetNumberOfComponents(1);
