@@ -10,13 +10,18 @@ import java.util.function.Function;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JSpinner;
 import javax.swing.ProgressMonitor;
 import javax.swing.SwingUtilities;
+import javax.swing.text.DateFormatter;
+import javax.swing.text.DefaultFormatterFactory;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.ISODateTimeFormat;
 
 import com.jidesoft.utils.SwingWorker;
 
+import crucible.core.mechanics.providers.lockable.LockableEphemerisLinkEvaluationException;
 import edu.jhuapl.sbmt.image.ui.SBMTDateSpinner;
 import edu.jhuapl.sbmt.pointing.spice.SpiceInfo;
 import edu.jhuapl.sbmt.stateHistory.model.StateHistoryModel;
@@ -25,8 +30,6 @@ import edu.jhuapl.sbmt.stateHistory.model.io.StateHistoryInputException;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryKey;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.spice.SpiceStateHistoryIntervalGenerator;
 import edu.jhuapl.sbmt.stateHistory.ui.state.intervalGeneration.StateHistoryIntervalGenerationPanel;
-
-import crucible.core.mechanics.providers.lockable.LockableEphemerisLinkEvaluationException;
 
 /**
  * Controller that governs the "Interval Generation" panel of the State History tab
@@ -63,8 +66,16 @@ public class StateHistoryIntervalGenerationController
 
         view.getAvailableTimeLabel().setText(dateFormatter.format(newStart)+ " to\n " + dateFormatter.format(newEnd));
 
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MMM-dd HH:mm:ss.SSS");
+
         view.getStartTimeSpinner().setDate(newStart);
+        ((JSpinner.DefaultEditor) view.getStartTimeSpinner().getEditor()).getTextField()
+        .setFormatterFactory(new DefaultFormatterFactory(
+                new DateFormatter(format)));
         view.getStopTimeSpinner().setDate(newEnd);
+        ((JSpinner.DefaultEditor) view.getStopTimeSpinner().getEditor()).getTextField()
+        .setFormatterFactory(new DefaultFormatterFactory(
+                new DateFormatter(format)));
 
         //Adds an action listener to the "Get interval" button.
         view.getGetIntervalButton().addActionListener(e -> {
@@ -81,8 +92,8 @@ public class StateHistoryIntervalGenerationController
     				return;
     		}
 
-            DateTime startTime = view.getStartTimeSpinner().getISOFormattedTime();
-            DateTime endTime = view.getStopTimeSpinner().getISOFormattedTime();
+            DateTime startTime = ISODateTimeFormat.dateTimeParser().parseDateTime(new DateTime((Date)view.getStartTimeSpinner().getValue()).toString());
+            DateTime endTime = ISODateTimeFormat.dateTimeParser().parseDateTime(new DateTime((Date)view.getStopTimeSpinner().getValue()).toString());
 
             // TODO check key generation
             // generate random stateHistoryKey to use for this interval

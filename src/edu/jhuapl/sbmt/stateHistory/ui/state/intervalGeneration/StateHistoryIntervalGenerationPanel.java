@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -23,10 +24,13 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JRadioButton;
+import javax.swing.JSpinner;
 import javax.swing.JTextPane;
 import javax.swing.JToolBar;
 import javax.swing.SwingWorker;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.DateFormatter;
+import javax.swing.text.DefaultFormatterFactory;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
@@ -171,11 +175,19 @@ public class StateHistoryIntervalGenerationPanel extends JPanel
 		stateHistorySourceType = metadata.getType();
 		if (stateHistorySourceType == StateHistorySourceType.SPICE && hasPregenInfo) spiceDataRadioButton.setSelected(true);
 		else if (hasPregenInfo) pregenDataRadioButton.setSelected(true);
+		
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MMM-dd HH:mm:ss.SSS");
 		Date startDate = StateHistoryTimeModel.getDateForET(metadata.getStartTime());
 		startTimeSpinner.setDate(startDate);
+		((JSpinner.DefaultEditor) startTimeSpinner.getEditor()).getTextField()
+        .setFormatterFactory(new DefaultFormatterFactory(
+                new DateFormatter(format)));
 
 		Date stopDate = StateHistoryTimeModel.getDateForET(metadata.getEndTime());
 		stopTimeSpinner.setDate(stopDate);
+		((JSpinner.DefaultEditor) stopTimeSpinner.getEditor()).getTextField()
+        .setFormatterFactory(new DefaultFormatterFactory(
+                new DateFormatter(format)));
 		getIntervalButton.setEnabled(true);
 	}
 
@@ -209,10 +221,12 @@ public class StateHistoryIntervalGenerationPanel extends JPanel
 		metadata.setType(stateHistorySourceType);
 //		DateTime startTime = startTimeSpinner.getISOFormattedTime();
 //        DateTime endTime = stopTimeSpinner.getISOFormattedTime();
-		metadata.setStartTime(StateHistoryTimeModel.getETForDate(startTimeSpinner.getDate()));
-		metadata.setEndTime(StateHistoryTimeModel.getETForDate(stopTimeSpinner.getDate()));
-		history.getTrajectoryMetadata().getTrajectory().setStartTime(StateHistoryTimeModel.getETForDate(startTimeSpinner.getDate()));
-		history.getTrajectoryMetadata().getTrajectory().setStopTime(StateHistoryTimeModel.getETForDate(stopTimeSpinner.getDate()));
+		Date startTime = (Date)(startTimeSpinner.getValue());
+		Date stopTime = (Date)(stopTimeSpinner.getValue());
+		metadata.setStartTime(StateHistoryTimeModel.getETForDate(startTime));
+		metadata.setEndTime(StateHistoryTimeModel.getETForDate(stopTime));
+		history.getTrajectoryMetadata().getTrajectory().setStartTime(StateHistoryTimeModel.getETForDate(startTime));
+		history.getTrajectoryMetadata().getTrajectory().setStopTime(StateHistoryTimeModel.getETForDate(stopTime));
 	}
 
 	@Override
