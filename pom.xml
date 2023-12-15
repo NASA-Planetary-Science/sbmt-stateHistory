@@ -35,7 +35,7 @@
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.sbmt</groupId>
 		<artifactId>sbmt-image</artifactId>
-		<version>1.2.1-b7-SNAPSHOT</version>
+		<version>1.2.1.169-b8-SNAPSHOT</version>
 	</dependency>
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.sbmt</groupId>
