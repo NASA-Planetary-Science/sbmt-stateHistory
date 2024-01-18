@@ -16,8 +16,8 @@ public class StateHistoryConfigIO extends BaseFeatureConfigIO //  BaseInstrument
 {
 	final Key<SpiceInfo> spiceInfoKey = Key.of("spiceInfo");
 	final Key<Boolean> hasStateHistoryKey = Key.of("hasStateHistory");
-	final Key<Date> stateHistoryStartKey = Key.of("stateHistoryStart");
-	final Key<Date> stateHistoryEndKey = Key.of("stateHistoryEnd");
+	final Key<Long> stateHistoryStartKey = Key.of("stateHistoryStart");
+	final Key<Long> stateHistoryEndKey = Key.of("stateHistoryEnd");
 	final Key<String> timeHistoryFileKey = Key.of("timeHistoryFile");
 
 //	private StateHistoryConfig c = new StateHistoryConfig();
@@ -42,8 +42,16 @@ public class StateHistoryConfigIO extends BaseFeatureConfigIO //  BaseInstrument
 		StateHistoryConfig c = (StateHistoryConfig)featureConfig;
 		c.hasStateHistory = read(hasStateHistoryKey, configMetadata);
 		c.spiceInfo = read(spiceInfoKey, configMetadata);
-		c.stateHistoryStartDate = read(stateHistoryStartKey, configMetadata);
-		c.stateHistoryEndDate = read(stateHistoryEndKey, configMetadata);
+		
+		Long stateHistoryStartDate = read(stateHistoryStartKey, configMetadata);
+		Long stateHistoryEndDate = read(stateHistoryEndKey, configMetadata);
+		if (stateHistoryStartDate != null)
+		{
+			c.stateHistoryStartDate = new Date(stateHistoryStartDate);
+			c.stateHistoryEndDate = new Date(stateHistoryEndDate);
+		}
+		
+		
 		c.timeHistoryFile = read(timeHistoryFileKey, configMetadata);
 	}
 
@@ -65,8 +73,8 @@ public class StateHistoryConfigIO extends BaseFeatureConfigIO //  BaseInstrument
 
 		write(hasStateHistoryKey, c.hasStateHistory, configMetadata);
 		write(spiceInfoKey, c.spiceInfo, configMetadata);
-		write(stateHistoryStartKey, c.stateHistoryStartDate, configMetadata);
-		write(stateHistoryEndKey, c.stateHistoryEndDate, configMetadata);
+		writeDate(stateHistoryStartKey, c.stateHistoryStartDate, configMetadata);
+		writeDate(stateHistoryEndKey, c.stateHistoryEndDate, configMetadata);
 		write(timeHistoryFileKey, c.timeHistoryFile, configMetadata);
 
 		return configMetadata;
