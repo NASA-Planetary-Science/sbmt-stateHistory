@@ -29,8 +29,8 @@ import edu.jhuapl.sbmt.stateHistory.model.stateHistory.spice.SpiceStateHistoryLo
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 
 import crucible.core.mechanics.providers.lockable.LockableEphemerisLinkEvaluationException;
-import crucible.crust.metadata.impl.FixedMetadata;
-import crucible.crust.metadata.impl.gson.Serializers;
+import edu.jhuapl.ses.jsqrl.impl.FixedMetadata;
+import edu.jhuapl.ses.jsqrl.impl.gson.Serializers;
 
 /**
  * @author steelrj1
