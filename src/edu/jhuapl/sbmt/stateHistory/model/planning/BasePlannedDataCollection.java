@@ -8,8 +8,6 @@ import java.util.List;
 
 import com.google.common.collect.ImmutableList;
 
-import vtk.vtkProp;
-
 import edu.jhuapl.saavtk.model.SaavtkItemManager;
 import edu.jhuapl.saavtk.util.Properties;
 import edu.jhuapl.sbmt.core.body.SmallBodyModel;
@@ -17,8 +15,8 @@ import edu.jhuapl.sbmt.core.rendering.DataActor;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.IStateHistoryMetadata;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.rendering.planning.PlannedInstrumentRendererManager;
-
 import glum.item.ItemEventType;
+import vtk.vtkProp;
 
 public abstract class BasePlannedDataCollection<T extends PlannedInstrumentData> extends SaavtkItemManager<T> implements PropertyChangeListener
 {

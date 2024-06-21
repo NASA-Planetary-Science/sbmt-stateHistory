@@ -2,9 +2,8 @@ package edu.jhuapl.sbmt.stateHistory.rendering.directionMarkers;
 
 import java.awt.Color;
 
-import vtk.vtkTransform;
-
 import edu.jhuapl.saavtk.util.MathUtil;
+import vtk.vtkTransform;
 
 /**
  * @author steelrj1

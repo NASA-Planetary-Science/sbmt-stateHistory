@@ -10,13 +10,11 @@ import javax.swing.JFrame;
 
 import com.google.common.collect.ImmutableList;
 
-import vtk.vtkProp;
-
 import edu.jhuapl.saavtk.model.SaavtkItemManager;
 import edu.jhuapl.saavtk.util.Properties;
 import edu.jhuapl.sbmt.core.rendering.DataActor;
-
 import glum.item.ItemEventType;
+import vtk.vtkProp;
 
 
 public abstract class BasePlannedDataScheduleCollection<C extends BasePlannedDataCollection> extends SaavtkItemManager<C> implements PropertyChangeListener

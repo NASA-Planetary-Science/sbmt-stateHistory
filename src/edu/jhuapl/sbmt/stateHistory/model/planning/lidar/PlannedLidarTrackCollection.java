@@ -20,7 +20,6 @@ import edu.jhuapl.sbmt.lidar.LidarTrack;
 import edu.jhuapl.sbmt.lidar.util.LidarTrackUtil;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryPositionCalculator;
-
 import glum.item.IncrIdGenerator;
 
 public class PlannedLidarTrackCollection

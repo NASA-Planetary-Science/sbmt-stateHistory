@@ -43,7 +43,6 @@ import edu.jhuapl.sbmt.stateHistory.model.time.TimeWindow;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.playback.AnimationFileDialog;
 import edu.jhuapl.sbmt.stateHistory.ui.state.playback.StateHistoryIntervalPlaybackPanel;
-
 import glum.item.ItemEventType;
 
 /**

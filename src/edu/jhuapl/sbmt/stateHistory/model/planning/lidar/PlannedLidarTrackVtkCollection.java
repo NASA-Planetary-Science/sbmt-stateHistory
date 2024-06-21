@@ -8,8 +8,6 @@ import java.util.logging.Logger;
 
 import javax.swing.SwingUtilities;
 
-import vtk.vtkProp;
-
 import edu.jhuapl.saavtk.gui.render.Renderer;
 import edu.jhuapl.saavtk.model.ModelManager;
 import edu.jhuapl.saavtk.status.StatusNotifier;
@@ -19,6 +17,7 @@ import edu.jhuapl.sbmt.lidar.LidarTrack;
 import edu.jhuapl.sbmt.lidar.LidarTrackManager;
 import edu.jhuapl.sbmt.stateHistory.model.planning.BasePlannedDataCollection;
 import edu.jhuapl.sbmt.stateHistory.rendering.PlannedDataProperties;
+import vtk.vtkProp;
 
 public class PlannedLidarTrackVtkCollection extends BasePlannedDataCollection<PlannedLidarTrack>
 {

@@ -8,9 +8,6 @@ import java.util.ArrayList;
 
 import org.apache.commons.math3.geometry.euclidean.threed.Vector3D;
 
-import vtk.vtkMatrix4x4;
-import vtk.vtkTransform;
-
 import edu.jhuapl.saavtk.util.MathUtil;
 import edu.jhuapl.sbmt.core.body.SmallBodyModel;
 import edu.jhuapl.sbmt.image.model.PerspectiveFootprint;
@@ -27,10 +24,11 @@ import edu.jhuapl.sbmt.stateHistory.rendering.directionMarkers.EarthDirectionMar
 import edu.jhuapl.sbmt.stateHistory.rendering.directionMarkers.SpacecraftDirectionMarker;
 import edu.jhuapl.sbmt.stateHistory.rendering.directionMarkers.SunDirectionMarker;
 import edu.jhuapl.sbmt.stateHistory.rendering.text.SpacecraftLabel;
-
-import crucible.core.math.vectorspace.UnwritableVectorIJK;
-import crucible.core.mechanics.FrameID;
-import crucible.core.mechanics.utilities.SimpleFrameID;
+import picante.math.vectorspace.UnwritableVectorIJK;
+import picante.mechanics.FrameID;
+import picante.mechanics.utilities.SimpleFrameID;
+import vtk.vtkMatrix4x4;
+import vtk.vtkTransform;
 
 /**
  * @author steelrj1

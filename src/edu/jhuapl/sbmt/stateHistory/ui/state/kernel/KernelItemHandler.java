@@ -6,7 +6,6 @@ import com.google.common.collect.ImmutableMap;
 
 import edu.jhuapl.sbmt.core.util.KeyValueNode;
 import edu.jhuapl.sbmt.stateHistory.model.kernel.KernelInfo;
-
 import glum.gui.panel.itemList.BasicItemHandler;
 import glum.gui.panel.itemList.query.QueryComposer;
 
