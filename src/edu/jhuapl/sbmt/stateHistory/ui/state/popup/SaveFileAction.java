@@ -18,7 +18,6 @@ import edu.jhuapl.sbmt.stateHistory.model.io.StateHistoryModelIOHelper;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryCollection;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.spice.SpiceStateHistory;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
 import glum.gui.action.PopAction;
 
 /**

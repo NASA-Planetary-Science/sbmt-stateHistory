@@ -17,7 +17,6 @@ import edu.jhuapl.sbmt.stateHistory.controllers.viewControls.StateHistoryViewOpt
 import edu.jhuapl.sbmt.stateHistory.model.StateHistoryModel;
 import edu.jhuapl.sbmt.stateHistory.model.viewOptions.RendererLookDirection;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
 import glum.item.ItemEventType;
 
 /**

@@ -21,7 +21,6 @@ import org.joda.time.format.ISODateTimeFormat;
 
 import com.jidesoft.utils.SwingWorker;
 
-import crucible.core.mechanics.providers.lockable.LockableEphemerisLinkEvaluationException;
 import edu.jhuapl.sbmt.image.ui.SBMTDateSpinner;
 import edu.jhuapl.sbmt.pointing.spice.SpiceInfo;
 import edu.jhuapl.sbmt.stateHistory.model.StateHistoryModel;
@@ -30,6 +29,7 @@ import edu.jhuapl.sbmt.stateHistory.model.io.StateHistoryInputException;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryKey;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.spice.SpiceStateHistoryIntervalGenerator;
 import edu.jhuapl.sbmt.stateHistory.ui.state.intervalGeneration.StateHistoryIntervalGenerationPanel;
+import picante.mechanics.providers.lockable.LockableEphemerisLinkEvaluationException;
 
 /**
  * Controller that governs the "Interval Generation" panel of the State History tab

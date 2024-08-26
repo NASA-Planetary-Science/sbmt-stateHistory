@@ -12,7 +12,6 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 
 import edu.jhuapl.saavtk.util.ColorIcon;
-
 import glum.gui.GuiUtil;
 
 public class StateHistoryDisplayItemShowSunPanel extends AbstractStateHistoryDisplayItemPanel

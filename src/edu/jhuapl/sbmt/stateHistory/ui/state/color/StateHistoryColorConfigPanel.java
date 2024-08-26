@@ -16,7 +16,6 @@ import edu.jhuapl.saavtk.color.provider.GroupColorProvider;
 import edu.jhuapl.saavtk.color.provider.SimpleColorProvider;
 import edu.jhuapl.saavtk.feature.FeatureType;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
 import glum.gui.GuiExeUtil;
 import glum.gui.component.GComboBox;
 import glum.gui.panel.CardPanel;

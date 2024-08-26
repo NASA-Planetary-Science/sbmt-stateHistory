@@ -6,7 +6,6 @@ import edu.jhuapl.saavtk.config.ViewConfig;
 import edu.jhuapl.sbmt.core.body.BodyViewConfig;
 import edu.jhuapl.sbmt.core.config.BaseFeatureConfigIO;
 import edu.jhuapl.sbmt.pointing.spice.SpiceInfo;
-
 import edu.jhuapl.ses.jsqrl.api.Key;
 import edu.jhuapl.ses.jsqrl.api.Metadata;
 import edu.jhuapl.ses.jsqrl.api.Version;

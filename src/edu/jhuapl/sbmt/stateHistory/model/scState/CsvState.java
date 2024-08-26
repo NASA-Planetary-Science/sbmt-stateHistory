@@ -8,8 +8,7 @@ import java.io.IOException;
 import edu.jhuapl.sbmt.core.util.TimeUtil;
 import edu.jhuapl.sbmt.pointing.State;
 import edu.jhuapl.sbmt.stateHistory.model.StateHistoryUtil;
-
-import crucible.core.math.vectorspace.UnwritableVectorIJK;
+import picante.math.vectorspace.UnwritableVectorIJK;
 
 /**
  * Spacecraft state object represented by a set of comma separated values

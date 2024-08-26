@@ -24,7 +24,6 @@ import edu.jhuapl.sbmt.core.gui.EphemerisTimeRenderer;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImage;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImageCollection;
-
 import glum.gui.GuiUtil;
 import glum.gui.misc.BooleanCellEditor;
 import glum.gui.misc.BooleanCellRenderer;

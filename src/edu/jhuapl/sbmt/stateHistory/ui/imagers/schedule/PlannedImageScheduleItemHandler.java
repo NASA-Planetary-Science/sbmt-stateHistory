@@ -5,7 +5,6 @@ import java.awt.Color;
 import edu.jhuapl.saavtk.color.provider.ConstColorProvider;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImageCollection;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImageScheduleCollection;
-
 import glum.gui.panel.itemList.BasicItemHandler;
 import glum.gui.panel.itemList.query.QueryComposer;
 

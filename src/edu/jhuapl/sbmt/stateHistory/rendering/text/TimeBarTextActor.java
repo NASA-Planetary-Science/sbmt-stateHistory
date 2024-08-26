@@ -1,8 +1,7 @@
 package edu.jhuapl.sbmt.stateHistory.rendering.text;
 
-import vtk.vtkTextActor;
-
 import edu.jhuapl.sbmt.core.util.TimeUtil;
+import vtk.vtkTextActor;
 
 /**
  * vtkTextActor that displays the current time in the renderer
