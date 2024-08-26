@@ -5,7 +5,6 @@ import java.awt.Color;
 import edu.jhuapl.saavtk.color.provider.ConstColorProvider;
 import edu.jhuapl.saavtk.gui.panel.JComboBoxWithItemState;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
 import glum.gui.panel.itemList.BasicItemHandler;
 import glum.gui.panel.itemList.query.QueryComposer;
 import glum.item.ItemEventType;

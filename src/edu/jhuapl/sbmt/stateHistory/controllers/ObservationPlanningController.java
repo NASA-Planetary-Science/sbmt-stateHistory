@@ -26,7 +26,6 @@ import edu.jhuapl.sbmt.stateHistory.model.time.StateHistoryTimeModel;
 import edu.jhuapl.sbmt.stateHistory.rendering.PlannedDataProperties;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.playback.StateHistoryIntervalPlaybackPanel;
-
 import glum.item.ItemEventType;
 
 public class ObservationPlanningController implements PropertyChangeListener

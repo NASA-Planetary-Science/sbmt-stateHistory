@@ -4,13 +4,12 @@ import java.awt.Color;
 import java.awt.Font;
 import java.util.ArrayList;
 
+import edu.jhuapl.sbmt.stateHistory.rendering.DisplayableItem;
+import edu.jhuapl.sbmt.stateHistory.rendering.text.GenericVTKLabel;
 import vtk.vtkActor;
 import vtk.vtkConeSource;
 import vtk.vtkPolyDataMapper;
 import vtk.vtkProp;
-
-import edu.jhuapl.sbmt.stateHistory.rendering.DisplayableItem;
-import edu.jhuapl.sbmt.stateHistory.rendering.text.GenericVTKLabel;
 
 public abstract class BaseDirectionMarker extends vtkConeSource implements DisplayableItem
 {

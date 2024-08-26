@@ -10,7 +10,6 @@ import edu.jhuapl.saavtk.color.provider.ConstColorProvider;
 import edu.jhuapl.sbmt.core.util.TimeUtil;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImage;
 import edu.jhuapl.sbmt.stateHistory.model.planning.imagers.PlannedImageCollection;
-
 import glum.gui.panel.itemList.BasicItemHandler;
 import glum.gui.panel.itemList.query.QueryComposer;
 

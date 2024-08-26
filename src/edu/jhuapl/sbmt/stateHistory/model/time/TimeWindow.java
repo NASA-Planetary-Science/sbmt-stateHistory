@@ -5,8 +5,7 @@ import java.text.SimpleDateFormat;
 import org.joda.time.DateTime;
 
 import edu.jhuapl.sbmt.core.util.TimeUtil;
-
-import crucible.core.time.UTCEpoch;
+import picante.time.UTCEpoch;
 
 /**
  * Time window in et

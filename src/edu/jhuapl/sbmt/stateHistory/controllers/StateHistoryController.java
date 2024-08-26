@@ -18,8 +18,6 @@ import org.apache.commons.io.FilenameUtils;
 import org.joda.time.DateTime;
 import org.joda.time.format.ISODateTimeFormat;
 
-import vtk.rendering.jogl.vtkJoglPanelComponent;
-
 import edu.cmu.relativelayout.Binding;
 import edu.cmu.relativelayout.BindingFactory;
 import edu.cmu.relativelayout.Direction;
@@ -46,8 +44,8 @@ import edu.jhuapl.sbmt.stateHistory.model.time.TimeWindow;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.displayedInterval.StateHistoryDisplayedIntervalPanel;
 import edu.jhuapl.sbmt.stateHistory.ui.state.intervalSelection.table.StateHistoryTableView;
-
 import glum.item.ItemEventType;
+import vtk.rendering.jogl.vtkJoglPanelComponent;
 
 /**
  * The controller that drives the main panel for the StateHistory tab.

@@ -18,7 +18,6 @@ import javax.swing.border.TitledBorder;
 
 import edu.jhuapl.saavtk.gui.util.IconUtil;
 import edu.jhuapl.saavtk.gui.util.ToolTipUtil;
-
 import glum.gui.GuiUtil;
 
 /**

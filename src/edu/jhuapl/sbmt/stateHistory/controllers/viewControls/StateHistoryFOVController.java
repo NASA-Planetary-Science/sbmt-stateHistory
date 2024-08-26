@@ -21,7 +21,6 @@ import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryCollection;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.fov.StateHistoryFOVPanel;
 import edu.jhuapl.sbmt.stateHistory.ui.state.fov.table.ViewOptionsFOVTableView;
-
 import glum.item.ItemEventType;
 
 /**

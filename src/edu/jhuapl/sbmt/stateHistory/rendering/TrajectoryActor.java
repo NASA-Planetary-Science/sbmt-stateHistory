@@ -5,6 +5,14 @@ import java.util.function.BiFunction;
 
 import com.google.common.collect.Range;
 
+import edu.jhuapl.saavtk.color.provider.ColorProvider;
+import edu.jhuapl.saavtk.colormap.Colormap;
+import edu.jhuapl.saavtk.feature.FeatureAttr;
+import edu.jhuapl.saavtk.feature.FeatureType;
+import edu.jhuapl.sbmt.pointing.InstrumentPointing;
+import edu.jhuapl.sbmt.stateHistory.model.interfaces.Trajectory;
+import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
+import picante.math.vectorspace.UnwritableVectorIJK;
 import vtk.vtkActor;
 import vtk.vtkCellArray;
 import vtk.vtkLine;
@@ -13,16 +21,6 @@ import vtk.vtkPolyData;
 import vtk.vtkPolyDataMapper;
 import vtk.vtkPolyLine;
 import vtk.vtkUnsignedCharArray;
-
-import edu.jhuapl.saavtk.color.provider.ColorProvider;
-import edu.jhuapl.saavtk.colormap.Colormap;
-import edu.jhuapl.saavtk.feature.FeatureAttr;
-import edu.jhuapl.saavtk.feature.FeatureType;
-import edu.jhuapl.sbmt.pointing.InstrumentPointing;
-import edu.jhuapl.sbmt.stateHistory.model.interfaces.Trajectory;
-import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
-import crucible.core.math.vectorspace.UnwritableVectorIJK;
 
 /**
  * vtkActor that represents a state history trajectory

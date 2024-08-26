@@ -5,14 +5,13 @@ import java.util.NavigableMap;
 import java.util.Set;
 import java.util.TreeMap;
 
+import altwg.util.MathUtil;
 import edu.jhuapl.sbmt.pointing.IPointingProvider;
 import edu.jhuapl.sbmt.pointing.State;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.IStateHistoryLocationProvider;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.model.io.StateHistoryIOException;
-
-import altwg.util.MathUtil;
-import crucible.core.math.vectorspace.UnwritableVectorIJK;
+import picante.math.vectorspace.UnwritableVectorIJK;
 
 public class StandardStateHistoryLocationProvider implements IStateHistoryLocationProvider
 {

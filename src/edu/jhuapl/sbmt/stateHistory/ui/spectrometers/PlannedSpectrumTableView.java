@@ -26,7 +26,6 @@ import edu.jhuapl.sbmt.core.gui.EphemerisTimeRenderer;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.model.planning.spectrometers.PlannedSpectrum;
 import edu.jhuapl.sbmt.stateHistory.model.planning.spectrometers.PlannedSpectrumCollection;
-
 import glum.gui.GuiUtil;
 import glum.gui.misc.BooleanCellEditor;
 import glum.gui.misc.BooleanCellRenderer;
