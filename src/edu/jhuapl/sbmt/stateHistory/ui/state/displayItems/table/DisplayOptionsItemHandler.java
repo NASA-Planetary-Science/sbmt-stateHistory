@@ -7,7 +7,6 @@ import edu.jhuapl.saavtk.color.provider.ConstColorProvider;
 import edu.jhuapl.saavtk.util.Properties;
 import edu.jhuapl.sbmt.stateHistory.rendering.DisplayableItem;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
-
 import glum.gui.panel.itemList.BasicItemHandler;
 import glum.gui.panel.itemList.query.QueryComposer;
 

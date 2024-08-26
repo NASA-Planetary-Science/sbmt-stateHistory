@@ -4,14 +4,13 @@ import java.awt.Color;
 import java.awt.Font;
 import java.util.ArrayList;
 
+import edu.jhuapl.sbmt.stateHistory.rendering.text.GenericVTKLabel;
 import vtk.vtkActor;
 import vtk.vtkCubeSource;
 import vtk.vtkMatrix4x4;
 import vtk.vtkPolyData;
 import vtk.vtkPolyDataMapper;
 import vtk.vtkProp;
-
-import edu.jhuapl.sbmt.stateHistory.rendering.text.GenericVTKLabel;
 
 /**
  * @author steelrj1

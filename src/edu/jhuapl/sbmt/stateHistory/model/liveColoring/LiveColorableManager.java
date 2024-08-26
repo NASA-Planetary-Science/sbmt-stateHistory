@@ -2,14 +2,13 @@ package edu.jhuapl.sbmt.stateHistory.model.liveColoring;
 
 import java.util.HashMap;
 
-import vtk.vtkFloatArray;
-
 import edu.jhuapl.saavtk.util.NativeLibraryLoader;
 import edu.jhuapl.sbmt.image.model.PerspectiveFootprint;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.ICalculatedPlateValues;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.IFootprintConfinedPlateValues;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.ITimeCalculatedPlateValues;
 import edu.jhuapl.sbmt.stateHistory.model.time.StateHistoryTimeModel;
+import vtk.vtkFloatArray;
 
 public class LiveColorableManager
 {

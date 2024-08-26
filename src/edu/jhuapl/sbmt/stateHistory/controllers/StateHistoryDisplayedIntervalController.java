@@ -9,7 +9,6 @@ import edu.jhuapl.sbmt.stateHistory.model.time.TimeWindow;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.displayedInterval.StateHistoryDisplayedIntervalPanel;
 import edu.jhuapl.sbmt.stateHistory.ui.state.displayedInterval.StateHistoryPercentIntervalChanger;
-
 import glum.item.ItemEventType;
 
 /**

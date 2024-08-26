@@ -23,7 +23,6 @@ import edu.jhuapl.saavtk.gui.util.IconUtil;
 import edu.jhuapl.saavtk.gui.util.ToolTipUtil;
 import edu.jhuapl.sbmt.stateHistory.model.planning.spectrometers.PlannedSpectrumCollection;
 import edu.jhuapl.sbmt.stateHistory.model.planning.spectrometers.PlannedSpectrumScheduleCollection;
-
 import glum.gui.GuiUtil;
 import glum.gui.misc.BooleanCellEditor;
 import glum.gui.misc.BooleanCellRenderer;

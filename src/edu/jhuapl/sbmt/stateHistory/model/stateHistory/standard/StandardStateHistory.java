@@ -13,10 +13,6 @@ import org.apache.commons.io.FilenameUtils;
 
 import com.mysql.jdbc.StringUtils;
 
-import crucible.crust.metadata.api.Key;
-import crucible.crust.metadata.api.Version;
-import crucible.crust.metadata.impl.InstanceGetter;
-import crucible.crust.metadata.impl.SettableMetadata;
 import edu.jhuapl.saavtk.util.ColorUtil;
 import edu.jhuapl.sbmt.core.util.TimeUtil;
 import edu.jhuapl.sbmt.pointing.IPointingProvider;
@@ -36,6 +32,10 @@ import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryKey;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryMetadata;
 import edu.jhuapl.sbmt.stateHistory.model.stateHistory.StateHistoryTrajectoryMetadata;
 import edu.jhuapl.sbmt.stateHistory.model.trajectory.StandardTrajectory;
+import edu.jhuapl.ses.jsqrl.api.Key;
+import edu.jhuapl.ses.jsqrl.api.Version;
+import edu.jhuapl.ses.jsqrl.impl.InstanceGetter;
+import edu.jhuapl.ses.jsqrl.impl.SettableMetadata;
 
 /**
  * Standard class for holding history information.  A timeToStateMap keeps a correlation between ephemeris time

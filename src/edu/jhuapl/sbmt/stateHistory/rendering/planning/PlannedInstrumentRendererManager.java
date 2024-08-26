@@ -10,7 +10,6 @@ import edu.jhuapl.saavtk.util.Properties;
 import edu.jhuapl.sbmt.core.body.SmallBodyModel;
 import edu.jhuapl.sbmt.core.rendering.DataActor;
 import edu.jhuapl.sbmt.stateHistory.model.planning.PlannedInstrumentData;
-
 import nom.tam.fits.FitsException;
 
 public class PlannedInstrumentRendererManager

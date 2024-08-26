@@ -27,7 +27,6 @@ import edu.jhuapl.sbmt.core.gui.EphemerisTimeRenderer;
 import edu.jhuapl.sbmt.stateHistory.model.interfaces.StateHistory;
 import edu.jhuapl.sbmt.stateHistory.rendering.model.StateHistoryRendererManager;
 import edu.jhuapl.sbmt.stateHistory.ui.state.popup.StateHistoryGuiUtil;
-
 import glum.gui.GuiUtil;
 import glum.gui.action.PopupMenu;
 import glum.gui.misc.BooleanCellEditor;
