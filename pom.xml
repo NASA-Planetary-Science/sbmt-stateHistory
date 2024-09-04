@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.jhuapl.ses.srn.sbmt</groupId>
   <artifactId>sbmt-stateHistory</artifactId>
-  <version>1.0.8.032-b1-SNAPSHOT</version>
+  <version>1.0.8-b1-SNAPSHOT</version>
   <name>sbmt-stateHistory</name>
   <description>Statehistory library for SBMT</description>
   <packaging>jar</packaging>
@@ -35,12 +35,12 @@
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.sbmt</groupId>
 		<artifactId>sbmt-image</artifactId>
-		<version>1.2.5.193-b1-SNAPSHOT</version>
+		<version>1.2.5-b1-SNAPSHOT</version>
 	</dependency>
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.sbmt</groupId>
 		<artifactId>sbmt-lidar</artifactId>
-		<version>1.0.7.063-b1-SNAPSHOT</version>
+		<version>1.0.7-b1-SNAPSHOT</version>
 	</dependency>
 	<dependency>
 		<groupId>edu.jhuapl.ses.srn.sbmt</groupId>
