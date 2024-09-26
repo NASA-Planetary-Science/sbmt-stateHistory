@@ -2,7 +2,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>edu.jhuapl.ses.sbmt</groupId>
     <artifactId>sbmt-stateHistory</artifactId>
     <version>1.0.0</version>
     <name>sbmt-stateHistory</name>
@@ -19,11 +18,11 @@
 
     <scm>
         <connection>
-            scm:git:https://github.com/NASA-Planetary-Science/sbmt-stateHistory/sbmt-stateHistory.git</connection>
+            scm:git:https://github.com/NASA-Planetary-Science/sbmt-stateHistory.git</connection>
         <url>
-            https://github.com/NASA-Planetary-Science/sbmt-stateHistory/sbmt-stateHistory.git</url>
+            https://github.com/NASA-Planetary-Science/sbmt-stateHistory.git</url>
         <developerConnection>
-            scm:git:https://github.com/NASA-Planetary-Science/sbmt-stateHistory/sbmt-stateHistory.git</developerConnection>
+            scm:git:https://github.com/NASA-Planetary-Science/sbmt-stateHistory.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
